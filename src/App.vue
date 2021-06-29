@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div class="nav">
-      <b-container class="bv-example-row bv-example-row-flex-cols">
-        <b-row align-v="center">
+    <b-container class="bv-example-row bv-example-row-flex-cols">
+      <b-row align-v="center">
+        
           <b-col><img src="./../public/logo.svg" /></b-col>
           <b-col>
             <div class="search">
@@ -13,28 +14,109 @@
           <b-col>
             <button class="two">Become a host</button>
           </b-col>
-        </b-row>
-      </b-container>
+        
+      </b-row>
+    </b-container>
     </div>
-    <div class="text">
-      AIRBNB EXPERIENCES
-      <h1>
-        One-of-a-kind activities <br />
-        hosted by experts
-      </h1>
-      <h3>Introducing Online Experinces</h3>
-      <p>Unique activities we can do together, led by a world of hosts.</p>
-    </div>
-    <b-card-group class="cards">
+    <b-container>
+      <b-row>
+      <div class="text">
+        AIRBNB EXPERIENCES
+        <h1>
+          One-of-a-kind activities <br />
+          hosted by experts
+        </h1>
+        <h3>Introducing Online Experinces</h3>
+        <p>Unique activities we can do together, led by a world of hosts.</p>
+      </div>
+      </b-row>
+      <b-row>
+        <b-col md="3">
+          <b-card
+            title="Title"
+            img-src="https://placekitten.com/g/300/450"
+            img-alt="Image"
+            img-top
+          >
+            <b-card-text>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col md="3">
+          <b-card
+            title="Title"
+            img-src="https://placekitten.com/g/300/450"
+            img-alt="Image"
+            img-top
+          >
+            <b-card-text>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col md="3">
+          <b-card
+            title="Title"
+            img-src="https://placekitten.com/g/300/450"
+            img-alt="Image"
+            img-top
+          >
+            <b-card-text>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col md="3">
+          <b-card
+            title="Title"
+            img-src="https://placekitten.com/g/300/450"
+            img-alt="Image"
+            img-top
+          >
+            <b-card-text>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col md="3">
+          <div>
+            <button>
+              <a href="#">Show all online experiences</a>
+            </button>
+          </div>
+        </b-col>
+      </b-row>
 
-    <b-card title="Title" img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
-      <b-card-text>
-        This card has supporting text below as a natural lead-in to additional content.
-      </b-card-text>
-    </b-card>
+      <b-row>
+        <b-col md="3">
+          <div>
+            <b-card
+              title="Card Title"
+              img-src="https://picsum.photos/600/300/?image=25"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem"
+              class="mb-2"
+            >
+              <b-card-text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </b-card-text>
 
-    
-  </b-card-group>
+              <b-button href="#" variant="primary">Go somewhere</b-button>
+            </b-card>
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -55,6 +137,7 @@ img {
 }
 nav {
   height: 100px;
+  position: fixed;
 }
 #search {
   border-radius: 40px;
@@ -108,13 +191,9 @@ button {
 .two:hover {
   background-color: rgb(235, 235, 235, 0.5);
 }
-.text {
-  padding: 5% 20%;
-}
-.cards{
+/* .cards{
   padding: 0% 20%;
   max-width: 55%;
 
-}
-
+} */
 </style>
