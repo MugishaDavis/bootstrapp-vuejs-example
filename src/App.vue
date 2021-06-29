@@ -18,8 +18,9 @@
       </b-row>
     </b-container>
     </div>
-    <b-container>
-      <b-row>
+    <div class="main">
+    <b-container class="bv-example-row bv-example-row-flex-cols">
+      <b-row align-v="center" id="b-row">
       <div class="text">
         AIRBNB EXPERIENCES
         <h1>
@@ -30,7 +31,7 @@
         <p>Unique activities we can do together, led by a world of hosts.</p>
       </div>
       </b-row>
-      <b-row>
+      <b-row id="b-row">
         <b-col md="3">
           <b-card
             title="Title"
@@ -84,7 +85,7 @@
           </b-card>
         </b-col>
       </b-row>
-      <b-row>
+      <b-row id="b-row">
         <b-col md="3">
           <div>
             <button>
@@ -94,7 +95,7 @@
         </b-col>
       </b-row>
 
-      <b-row>
+      <b-row id="b-row">
         <b-col md="3">
           <div>
             <b-card
@@ -117,6 +118,7 @@
         </b-col>
       </b-row>
     </b-container>
+    </div>
   </div>
 </template>
 
@@ -178,9 +180,20 @@ button {
 }
 .nav {
   width: 100%;
+  background-color: white;
   box-shadow: 1px 1px 10px 1px #ebebeb;
   height: 95px;
   padding-top: 25px;
+  overflow: hidden;
+  position: fixed;
+  top: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:99;
+}
+.main{
+  margin-top: 95px;
 }
 .two {
   background-color: white;
@@ -191,9 +204,7 @@ button {
 .two:hover {
   background-color: rgb(235, 235, 235, 0.5);
 }
-/* .cards{
-  padding: 0% 20%;
-  max-width: 55%;
-
-} */
+#b-row{
+  padding: 40px 0px 00px;
+}
 </style>
